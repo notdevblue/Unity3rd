@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257db4fa4dea918e98b0fcc2d3350d94, type: 3}
+  m_Name: StoneHavester
+  m_EditorClassIdentifier: 
+  nameStr: Stone Havester
+  prefab: {fileID: 977303488392083683, guid: c1608bd02ed481b53bf4fd9022daeb55, type: 3}
+  resGenData:
+    timerMax: 1
+    resType: {fileID: 11400000, guid: d24f57480397dad19ac8399e86d901be, type: 2}
