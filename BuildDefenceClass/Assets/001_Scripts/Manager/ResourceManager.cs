@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ResourceManager : MonoBehaviour
 {
     static public ResourceManager Instance { get; private set; }
 
     private Dictionary<ResourceTypeSO, int> resourceAmountDict;
+
+    public Action OnResourceAmountChanged;
 
     private void Awake()
     {
@@ -38,7 +41,12 @@ public class ResourceManager : MonoBehaviour
     {
         resourceAmountDict[resType] += amount;
 
-        TestLogResAmountDict();
+	OnResourceAmountChanged?.Invoke();
+    }
+
+    public int GetResourceAmount(ResourceTypeSO resType)
+    {
+	return resourceAmountDict[resType];
     }
 
 

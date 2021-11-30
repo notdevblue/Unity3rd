@@ -17,3 +17,4 @@ MonoBehaviour:
   resGenData:
     timerMax: 1
     resType: {fileID: 11400000, guid: d24f57480397dad19ac8399e86d901be, type: 2}
+  sprite: {fileID: 21300000, guid: 2263e91ebcd2a254dab5f4caccb4a7af, type: 3}
