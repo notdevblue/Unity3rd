@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 977303488392083683}
   - component: {fileID: -5308503567848122052}
   - component: {fileID: -3162999089140994168}
+  - component: {fileID: 9157405838271713570}
   m_Layer: 0
   m_Name: StoneHavester
   m_TagString: Untagged
@@ -140,3 +141,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingType: {fileID: 11400000, guid: 4246dab29336aad49a91e8758e7a4996, type: 2}
+--- !u!114 &9157405838271713570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977303488392083680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c674cedf8bd5f22e19113a032de4e815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bRunOnce: 1

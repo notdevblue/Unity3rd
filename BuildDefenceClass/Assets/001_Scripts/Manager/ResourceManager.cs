@@ -52,9 +52,9 @@ public class ResourceManager : MonoBehaviour
 
     private void TestLogResAmountDict()
     {
-        foreach(ResourceTypeSO restype in resourceAmountDict.Keys) // Keys 만 돌림
-        {
-            print(string.Format("{0}:{1}", restype.nameStr, resourceAmountDict[restype]));
-        }
+        // foreach(ResourceTypeSO restype in resourceAmountDict.Keys) // Keys 만 돌림
+        // {
+        //     print(string.Format("{0}:{1}", restype.nameStr, resourceAmountDict[restype]));
+        // }
     }
 }
