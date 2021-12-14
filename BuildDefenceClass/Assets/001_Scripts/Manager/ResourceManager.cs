@@ -46,9 +46,57 @@ public class ResourceManager : MonoBehaviour
 
     public int GetResourceAmount(ResourceTypeSO resType)
     {
-	return resourceAmountDict[resType];
+	    return resourceAmountDict[resType];
     }
 
+    public bool CanBuildAfford(ResourceAmount[] amount)
+    {
+        foreach(ResourceAmount resourceAmount in amount)
+        {
+            if(GetResourceAmount(resourceAmount.resourceType) >= resourceAmount.amount)
+            {
+
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public void SpendResource(ResourceAmount[] amount)
+    {
+        foreach (ResourceAmount resourceAmount in amount)
+        {
+            resourceAmountDict[resourceAmount.resourceType] -= resourceAmount.amount;
+        }
+    }
+
+
+
+    // public bool Buy(ResourceAmount[] amount)
+    // {
+    //     bool canBuy = true;
+
+    //     for (int i = 0; i < amount.Length; ++i)
+    //     {
+    //         if(resourceAmountDict[amount[i].resourceType] < amount[i].amount) {
+    //             canBuy = false;
+    //             break;
+    //         }
+    //     }
+
+    //     if(canBuy) {
+    //         for (int i = 0; i < amount.Length; ++i)
+    //         {
+    //             resourceAmountDict[amount[i].resourceType] -= amount[i].amount;
+    //         }
+    //     }
+
+    //     return canBuy;
+    // }
 
     private void TestLogResAmountDict()
     {

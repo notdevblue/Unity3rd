@@ -12,6 +12,9 @@ public class UIBuildingTypeSelect : MonoBehaviour
     [SerializeField] private Sprite arrowSprite;
     private Transform arrowButtonTrm;
 
+    // 무시할 버튼 리스트
+    [SerializeField] private List<BuildingTypeSO> ignoreBuildingTypeList = new List<BuildingTypeSO>();
+
     private void Awake()
     {
         Transform btnTmpTrm = transform.Find("ButtonTemplate");
@@ -47,6 +50,9 @@ public class UIBuildingTypeSelect : MonoBehaviour
 
         foreach(BuildingTypeSO buildingType in buildingTypeList.btList)
         {
+            if(ignoreBuildingTypeList.Contains(buildingType)) continue; // 특정 버튼 무시
+
+
             Transform btnTrm = Instantiate(btnTmpTrm, transform);
             btnTrm.gameObject.SetActive(true);
 

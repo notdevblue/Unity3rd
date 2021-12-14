@@ -20,3 +20,9 @@ MonoBehaviour:
     detectRadius: 7
     maxResourcesAmount: 3
   sprite: {fileID: 21300000, guid: 8ead931dd91bff8489e75de9c414f17f, type: 3}
+  minConstructRadius: 7
+  buildResCostArray:
+  - resourceType: {fileID: 11400000, guid: dfb1e89a1a808aff5b7adb5c4d0e474b, type: 2}
+    amount: 50
+  - resourceType: {fileID: 11400000, guid: d24f57480397dad19ac8399e86d901be, type: 2}
+    amount: 50

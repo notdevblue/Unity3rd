@@ -12,4 +12,8 @@ public class BuildingTypeSO : ScriptableObject
     public ResourceGeneratorData resGenData;
 
     public Sprite sprite;
+
+    public float minConstructRadius; // 건물간 최소 거리 유지
+
+    public ResourceAmount[] buildResCostArray;
 }
