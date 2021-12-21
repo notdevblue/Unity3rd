@@ -109,6 +109,8 @@ GameObject:
   - component: {fileID: -3610275938709407229}
   - component: {fileID: -3450096887152215727}
   - component: {fileID: 6934169744438537824}
+  - component: {fileID: 7143292478150618797}
+  - component: {fileID: 3026283176862844462}
   m_Layer: 0
   m_Name: StoneHarvesterPrefab
   m_TagString: Untagged
@@ -129,6 +131,7 @@ Transform:
   m_Children:
   - {fileID: 5206269897272242706}
   - {fileID: 4471480822809652101}
+  - {fileID: 47248605243908891}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -183,6 +186,97 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.915961, y: 4.586645}
   m_EdgeRadius: 0
+--- !u!114 &7143292478150618797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419566294229899750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b51869bd95a3d7781f526f44ff8549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3026283176862844462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419566294229899750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd42afa4651cf34aad34a4f1c57f888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hpMax: 100
+--- !u!1001 &3657958688587169543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4546827237541180983}
+    m_Modifications:
+    - target: {fileID: 1956294847275618110, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: healthSystem
+      value: 
+      objectReference: {fileID: 3026283176862844462}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631152890845371421, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+      propertyPath: m_Name
+      value: HealthBarPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+--- !u!4 &47248605243908891 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3631152890845371420, guid: 3fdd9740fad8536c48c9f9f1a0ca6f22, type: 3}
+  m_PrefabInstance: {fileID: 3657958688587169543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8504574372230591006
 PrefabInstance:
   m_ObjectHideFlags: 0

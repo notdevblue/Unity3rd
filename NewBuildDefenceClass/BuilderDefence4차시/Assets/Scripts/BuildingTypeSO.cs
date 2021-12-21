@@ -17,4 +17,18 @@ public class BuildingTypeSO : ScriptableObject
 
     // 빌딩 코스트 추가 변수
     public ResourceAmount[] buildResCostArray;
+
+    public string GetBuildingNameAndCostStr()
+    {
+        string str = "";
+
+        foreach(var res in buildResCostArray)
+        {
+            str += res.resourceType.nameStr + ": " + res.amount + " ";
+        }
+
+        return str;
+    }
+
+    public int healthAmountMax;
 }

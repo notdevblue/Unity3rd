@@ -72,6 +72,24 @@ public class UIBuildingTypeSelect : MonoBehaviour
                 selectedImgTrm.position = btnTrm.position;
             });
 
+            // 툴팁 처리를 위한 마우스이벤트 코드
+            MouseEnterExitEvents mouseEnterExitEvents = btnTrm.GetComponent<MouseEnterExitEvents>();
+            mouseEnterExitEvents.OnMouseEnter += () => {
+                // string coststr = "";
+                // for (int i = 0; i < buildingType.buildResCostArray.Length; ++i) 
+                // {
+                //     coststr += buildingType.buildResCostArray[i].resourceType.ToString().Split(' ')[0] + ": " + buildingType.buildResCostArray[i].amount + ", ";
+                // }
+
+                // coststr = coststr.Substring(0, coststr.Length - 2);
+                // UIToolTip.Instance.Show($"{buildingType.nameStr}\r\n{coststr}");
+                UIToolTip.Instance.Show(buildingType.nameStr + System.Environment.NewLine + buildingType.GetBuildingNameAndCostStr());
+            };
+
+            mouseEnterExitEvents.OnMouseExit += () => {
+                UIToolTip.Instance.Hide();
+            };
+
             index++;
         }
     }
